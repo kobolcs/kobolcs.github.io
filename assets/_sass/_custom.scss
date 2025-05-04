@@ -1,4 +1,6 @@
-/* 2025 Brand Colors */
+/* ================================
+   2025 Brand Colors & Typography
+   ================================ */
 $primary-dark: #0D1B2A;
 $primary-light: #CED4DA;
 $accent-teal: #00C9A7;
@@ -6,7 +8,6 @@ $accent-blue: #14C8FF;
 $background-light: #F8F9FA;
 $text-light: #FFFFFF;
 
-/* Typography & Background */
 body {
   font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', sans-serif;
   background-color: $background-light;
@@ -26,22 +27,17 @@ h6 {
   color: $primary-dark;
 }
 
-/* Card Grid */
+/* ================================
+   Case Studies & Feature Cards
+   ================================ */
 .card-grid {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
-  margin: 2rem 0;
-  align-items: stretch;
-  width: 100%;
+  margin: 1rem 0;
 }
 
-.card-grid>* {
-  width: 100%;
-  /* Force all direct children (cards) to be full width */
-}
-
-/* Glowing Cards */
 .feature__item {
   background: $primary-dark;
   border: 2px solid $accent-teal;
@@ -49,30 +45,87 @@ h6 {
   box-shadow: 0 0 12px $accent-teal;
   padding: 2rem;
   color: $primary-light !important;
-  transition: transform 0.2s, box-shadow 0.2s;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
   text-decoration: none;
   box-sizing: border-box;
-  align-self: stretch;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 auto;
+  /* center align */
 }
 
-/* Ensure all text inside cards is visible and consistent */
 .feature__item h3,
 .feature__item p,
 .feature__item a {
   color: $primary-light !important;
 }
 
-/* Hover effect for clickable cards */
 .feature__item--clickable:hover {
-  transform: translateY(-4px) scale(1.02);
+  transform: translateY(-4px) scale(1.03);
   box-shadow: 0 0 24px $accent-blue, 0 8px 20px rgba(0, 0, 0, 0.4);
-  background: linear-gradient(135deg, rgba(13, 27, 42, 0.95) 0%, rgba(20, 200, 255, 0.15) 100%);
+  background: linear-gradient(135deg, rgba(13, 27, 42, 0.95), rgba(20, 200, 255, 0.1));
 }
 
-/* Button Styling */
+/* ================================
+   Service Cards
+   ================================ */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.service-card {
+  background: $primary-dark;
+  border: 2px solid $accent-teal;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  text-align: center;
+  color: $primary-light;
+  text-decoration: none;
+  box-shadow: 0 0 12px $accent-teal;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 240px;
+
+  &:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 0 24px $accent-blue, 0 8px 20px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(135deg, rgba(13, 27, 42, 0.95) 0%, rgba(20, 200, 255, 0.15) 100%);
+  }
+}
+
+/* Service Icons */
+.service-icon {
+  font-size: 3rem;
+  color: $accent-blue;
+  margin-bottom: 1rem;
+}
+
+/* Service Text */
+.service-content h3 {
+  font-size: 1.4rem;
+  margin: 0.5rem 0;
+}
+
+.service-content p {
+  font-size: 1rem;
+  color: $primary-light;
+  opacity: 0.9;
+}
+
+.service-card:hover h3 {
+  color: $accent-blue;
+}
+
+/* ================================
+   Buttons
+   ================================ */
 a.btn--inverse {
   display: inline-block;
   background: transparent;
@@ -80,22 +133,24 @@ a.btn--inverse {
   color: $accent-teal;
   padding: 0.5rem 1rem;
   border-radius: 0.75rem;
-  transition: background 0.3s ease;
   text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 a.btn--inverse:hover {
   background: $accent-teal;
   color: $primary-dark;
+  transform: scale(1.05);
 }
 
-/* Optional: Smooth scaling for all buttons and cards */
-a.btn--inverse,
-.feature__item--clickable {
-  transition: all 0.3s ease;
+a.btn--inverse::after {
+  content: " →";
+  font-weight: bold;
 }
 
-/* Kill Minimal Mistakes nth-child margins messing up the alignment */
+/* ================================
+   Reset MM nth-child spacing bug
+   ================================ */
 .feature__item:nth-child(3n+2),
 .feature__item:nth-child(3n+3) {
   margin-inline-start: 0 !important;

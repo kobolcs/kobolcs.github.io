@@ -1,16 +1,24 @@
 services:
   - title: "E2E Workflow Automation"
-    excerpt: "Custom-built automation for your most complex web journeys. Minimize risk, maximize efficiency."
+    excerpt: "Custom-built automation for your most complex web journeys."
     url: "/services/e2e-workflow-automation"
+    icon: "fas fa-robot"
+
   - title: "Regression Testing"
-    excerpt: "Lightning-fast, stable test suites to ensure reliable deployments every time."
+    excerpt: "Lightning-fast, stable test suites to ensure reliable deployments."
     url: "/services/regression-testing"
+    icon: "fas fa-undo"
+
   - title: "AI-Driven Automation"
-    excerpt: "Leverage next-gen, self-healing tests powered by AI (coming soon)."
+    excerpt: "Leverage next-gen, self-healing tests powered by AI."
     url: "/services/ai-driven-automation"
+    icon: "fas fa-brain"
+
   - title: "Web3 & Blockchain Testing"
     excerpt: "Future-proof testing for decentralized apps and smart contracts."
     url: "/services/web3-blockchain-testing"
+    icon: "fab fa-ethereum"
+
 
 
 case_studies:
