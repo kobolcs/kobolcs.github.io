@@ -1,0 +1,21 @@
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "default"
+
+title: "Csaba Kobol"
+name: "Csaba Kobol"
+description: "Helping teams deliver better software with expert QA, automation, and practical testing insights."
+url: "https://kobolcs.github.io"
+baseurl: ""
+
+sass:
+  sass_dir: assets/_sass
+  style: compressed
+  load_paths:
+    - assets/_sass
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache

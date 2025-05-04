@@ -1,0 +1,5 @@
+services:
+  - title: "Sample Service 1"
+    excerpt: "This is a sample service description."
+  - title: "Sample Service 2"
+    excerpt: "Another example service."
