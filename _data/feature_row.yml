@@ -11,7 +11,7 @@ services:
 
   - title: "AI-Driven Automation"
     excerpt: "Exploring AI tools and self-healing test automation. Accepting pilot projects for early adopters."
-    url: ""
+    url: "/services/ai-driven-automation/"
     icon: "fas fa-brain"
 
   - title: "Blockchain Testing"

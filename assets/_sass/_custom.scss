@@ -50,6 +50,40 @@ h1.page__title {
 }
 
 /* ================================
+   Hero Section
+   ================================ */
+
+.page__hero--overlay {
+  text-align: center;
+  padding: 6rem 1rem;
+}
+
+.page__hero--overlay h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: $text-light;
+}
+
+.page__hero--overlay .page__lead {
+  font-size: 1.25rem;
+  color: $primary-light;
+}
+
+.page__hero--overlay .btn {
+  font-size: 1.2rem;
+  padding: 0.8rem 1.5rem;
+  background-color: $accent-teal;
+  color: $primary-dark;
+  border-radius: 0.75rem;
+  transition: background 0.3s ease;
+}
+
+.page__hero--overlay .btn:hover {
+  background-color: $accent-blue;
+  color: $text-light;
+}
+
+/* ================================
    Case Studies & Feature Cards
    ================================ */
 .card-grid {

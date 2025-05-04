@@ -1,8 +1,19 @@
 ---
 layout: splash
-title: "QA Automation for Complex E2E Workflows"
+title: "QA Test Automation Consulting"
 permalink: /
-excerpt: "Maximizing Software Reliability, Minimizing Risk."
+excerpt: "Custom automation solutions for complex web apps. Reduce testing risk. Accelerate releases."
+
+header:
+  overlay_color: "#0D1B2A"
+  overlay_filter: "0.4"
+  overlay_image: /assets/images/hero.png
+  actions:
+    - label: "Book a Discovery Call"
+      url: "/contact/"
+    - label: "Learn More"
+      url: "/about/"
+author_profile: true
 
 header:
   overlay_color: "#0D1B2A"  # Deep blue background
