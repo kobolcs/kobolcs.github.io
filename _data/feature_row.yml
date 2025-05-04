@@ -9,16 +9,18 @@ services:
     url: "/services/regression-testing"
     icon: "fas fa-sync-alt"
 
+
   - title: "AI-Driven Automation"
     excerpt: "Exploring AI tools and self-healing test automation. Accepting pilot projects for early adopters."
-    url: "/services/ai-driven-automation/"
+    url: "/services/#ai-driven-automation/"
     icon: "fas fa-brain"
+    ribbon: "R&D"
 
   - title: "Blockchain Testing"
     excerpt: "Currently developing expertise in secure, automated testing for smart contracts and dApps. Looking for beta clients and collaborations."
-    url: ""
+    url: "/services/#blockchain/"
     icon: "fab fa-ethereum"
-
+    ribbon: "R&D"
 
 case_studies:
   - title: "🏷️ Romania Deposit-Return System Automation"

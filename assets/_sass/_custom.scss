@@ -69,18 +69,22 @@ h1.page__title {
   color: $primary-light;
 }
 
+
 .page__hero--overlay .btn {
   font-size: 1.2rem;
   padding: 0.8rem 1.5rem;
   background-color: $accent-teal;
   color: $primary-dark;
   border-radius: 0.75rem;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 .page__hero--overlay .btn:hover {
-  background-color: $accent-blue;
+  background: linear-gradient(135deg, $accent-blue, $accent-teal);
   color: $text-light;
+  transform: scale(1.05);
+  box-shadow: 0 0 16px rgba(20, 200, 255, 0.6), 0 0 6px rgba(0, 201, 167, 0.4);
+  text-decoration: none;
 }
 
 /* ================================
@@ -301,4 +305,168 @@ a.btn--inverse::after {
 .grey-icon {
   filter: grayscale(100%);
   opacity: 0.7;
+}
+
+/* ================================
+   Subtle Button Pulse Animation
+   ================================ */
+
+@keyframes button-glow {
+  0% {
+    box-shadow: 0 0 16px rgba(20, 200, 255, 0.6), 0 0 6px rgba(0, 201, 167, 0.4);
+  }
+
+  50% {
+    box-shadow: 0 0 24px rgba(20, 200, 255, 0.8), 0 0 10px rgba(0, 201, 167, 0.5);
+  }
+
+  100% {
+    box-shadow: 0 0 16px rgba(20, 200, 255, 0.6), 0 0 6px rgba(0, 201, 167, 0.4);
+  }
+}
+
+.page__hero--overlay .btn:hover {
+  background: linear-gradient(135deg, $accent-blue, $accent-teal);
+  color: $text-light;
+  transform: scale(1.05);
+  box-shadow: 0 0 16px rgba(20, 200, 255, 0.6), 0 0 6px rgba(0, 201, 167, 0.4);
+  animation: button-glow 1.8s infinite ease-in-out;
+  text-decoration: none;
+}
+@keyframes card-glow {
+  0% {
+    box-shadow: 0 0 12px rgba(20, 200, 255, 0.3);
+  }
+
+  50% {
+    box-shadow: 0 0 24px rgba(20, 200, 255, 0.6);
+  }
+
+  100% {
+    box-shadow: 0 0 12px rgba(20, 200, 255, 0.3);
+  }
+}
+
+/* --- Service Card Hover Effect --- */
+.service-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 0 16px $accent-blue;
+  background-color: $primary-dark;
+  animation: card-glow 2s infinite ease-in-out;
+}
+
+/* --- Case Study Card Hover Effect --- */
+.feature__item--clickable:hover,
+.feature__item:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 0 16px $accent-blue;
+  background-color: $primary-dark;
+  animation: card-glow 2s infinite ease-in-out;
+}
+
+/* ================================
+   Layout & Spacing Tweaks
+   ================================ */
+
+/* General page padding */
+.page__content {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Service Cards - more breathing room */
+.service-grid {
+  gap: 2.5rem;
+  margin: 4rem 0;
+}
+
+.service-card {
+  padding: 2.5rem 1.5rem;
+  min-height: 260px;
+}
+
+/* Case Studies - improved spacing */
+.card-grid {
+  gap: 2.5rem;
+  margin: 3rem 0;
+}
+
+/* About section spacing */
+.about-snapshot {
+  gap: 2rem;
+  padding: 2rem 1.5rem;
+  margin-top: 3rem;
+}
+
+/* Hero title bottom margin */
+.page__hero--overlay h1 {
+  margin-bottom: 1rem;
+}
+
+.page__hero--overlay .page__lead {
+  margin-bottom: 2rem;
+}
+
+/* On smaller screens reduce padding slightly */
+@media (max-width: 600px) {
+  .service-card {
+    padding: 2rem 1rem;
+  }
+
+  .feature__item {
+    padding: 2rem 1rem;
+  }
+}
+
+/* ================================
+   Widen content for larger screens
+   ================================ */
+
+.page__content {
+  max-width: 1400px;
+  /* was 1200px */
+  padding: 2rem 1rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 1600px) {
+  .page__content {
+    max-width: 1600px;
+
+  }
+}
+
+/* ================================
+   Coming Soon Ribbon for service cards
+   ================================ */
+.ribbon {
+  position: absolute;
+  top: 1rem;
+  right: -1rem;
+  background: $accent-blue;
+  color: $primary-dark;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.85rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 6px $accent-teal;
+}
+
+.service-card {
+  position: relative;
+  /* Make sure ribbon positions correctly */
+}
+
+.ribbon {
+  display: inline-block;
+  background-color: $accent-blue;
+  color: $text-light;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+  box-shadow: 0 0 6px $accent-blue;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }

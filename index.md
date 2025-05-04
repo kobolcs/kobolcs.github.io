@@ -40,6 +40,10 @@ This is the clean new start.
 {% for service in site.data.feature_row.services %}
   <a href="{{ service.url }}" class="service-card feature__item--clickable">
     <i class="service-icon {{ service.icon }}"></i>
+    {% if service.ribbon %}
+    <span class="ribbon">{{ service.ribbon }}</span>
+    {% endif %}
+
     <div class="service-content">
       <h3>{{ service.title }}</h3>
       <p>{{ service.excerpt }}</p>
