@@ -21,11 +21,11 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name             : "Csaba Kobol"
-  avatar           : "/assets/images/avatar_home_512.png"
-  bio              : "Remote Test Automation Consultant specializing in complex E2E workflows. I help software teams reduce testing risk and accelerate releases through custom automation solutions. Exploring AI and Web3 testing practices to stay ahead of industry trends."
-  location         : "Remote | Europe & North America clients"
-  email            :
+  name: "Csaba Kobol"
+  avatar: "/assets/images/avatar_home_512.png"
+  bio: "Remote Test Automation Consultant specializing in complex end-to-end test automation solutions.I help software teams reduce testing risk and accelerate releases through custom automation solutions. Exploring AI and Web3 testing practices to stay ahead of industry trends."
+  location: "Remote | Europe & North America clients"
+  email: ""
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -35,5 +35,20 @@ author:
       url: "https://linkedin.com/in/csabakobol"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
+      url: "https://github.com/kobolcs"
+
+footer:
+  links:
+    - label: "Privacy Policy"
+      icon: "" # no icon
+      url: "/privacy/"
+    - label: "Terms of Service"
+      icon: "" # no icon
+      url: "/terms/"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin grey-icon"
+      url: "https://linkedin.com/in/csabakobol"
+    - label: "GitHub"
+      icon: "fab fa-github grey-icon"
       url: "https://github.com/kobolcs"
 

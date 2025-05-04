@@ -1,0 +1,26 @@
+main:
+  - title: "Home"
+    url: "/"
+  - title: "Services"
+    url: "/services"
+  - title: "Case Studies"
+    url: "/case-studies"
+  - title: "About"
+    url: "/about"
+  - title: "Contact"
+    url: "/contact"
+footer:
+  links:
+    - label: "Privacy Policy"
+      icon: "" # no icon
+      url: "/privacy/"
+    - label: "Terms of Service"
+      icon: "" # no icon
+      url: "/terms/"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin grey-icon"
+      url: "https://linkedin.com/in/csabakobol"
+    - label: "GitHub"
+      icon: "fab fa-github grey-icon"
+      url: "https://github.com/kobolcs"
+

@@ -10,23 +10,23 @@ services:
     icon: "fas fa-sync-alt"
 
   - title: "AI-Driven Automation"
-    excerpt: "Explore AI tools and self-healing tests to future-proof QA processes. Prepared for remote delivery."
-    url: "/services/ai-driven-automation"
+    excerpt: "Exploring AI tools and self-healing test automation. Accepting pilot projects for early adopters."
+    url: ""
     icon: "fas fa-brain"
 
-  - title: "Web3 & Blockchain Testing"
-    excerpt: "Testing solutions for decentralized apps and smart contracts. Flexible collaboration across time zones."
-    url: "/services/web3-blockchain-testing"
+  - title: "Blockchain Testing"
+    excerpt: "Currently developing expertise in secure, automated testing for smart contracts and dApps. Looking for beta clients and collaborations."
+    url: ""
     icon: "fab fa-ethereum"
 
 
 case_studies:
-  - title: "🏷️ RetuRO – Deposit-Return System Automation"
-    excerpt: "Reduced manual QA workload by 70% for Romania’s national DRS. Delivered automation as a remote consultant."
-    url: "/case-studies/#returo--national-deposit-return-system-automation-romania"
+  - title: "🏷️ Romania Deposit-Return System Automation"
+    excerpt: "Reduced manual QA workload by 70% for national deposit return system powered by Sensoneo. Delivered automation as a remote consultant."
+    url: "/case-studies/romania-national-deposit-return-system-automation-sensoneo"
     btn_label: "Read full case study →"
 
-  - title: "🧬 COPADO – Salesforce Vaccine Management"
+  - title: "🧬 CDPH SalesForce Vaccine Management Test Suite Migration to a Low-code  platform"
     excerpt: "Enhanced test reliability for California’s public health platform. Provided automation frameworks remotely."
     url: "/case-studies/#copado--salesforce-based-vaccine-management-cdph"
     btn_label: "Read full case study →"

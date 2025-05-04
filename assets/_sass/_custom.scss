@@ -89,10 +89,10 @@ h1.page__title {
   background-color: $primary-dark;
   box-shadow: 0 0 24px $accent-blue;
 }
-
 /* ================================
    Service Cards
    ================================ */
+
 .service-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -116,43 +116,74 @@ h1.page__title {
   justify-content: center;
   min-height: 240px;
 
-  h3,
-  p,
-  a {
-    text-decoration: none;
-    color: $primary-light;
+  /* Kill underline for everything by default */
+  *,
+  *:hover,
+  *:focus {
+    text-decoration: none !important;
   }
 
   &:hover {
     transform: translateY(-6px) scale(1.03);
     box-shadow: 0 0 24px $accent-blue;
     background-color: $primary-dark;
-    /* no gradient to maintain contrast */
+    /* Stay consistent */
   }
 
-  &:hover h3 {
-    text-decoration: underline;
+  .service-icon {
+    font-size: 3rem;
     color: $accent-blue;
+    margin-bottom: 1rem;
+    text-decoration: none !important;
+    line-height: 1;
+    vertical-align: middle;
+  }
+
+  .service-content h3 {
+    font-size: 1.4rem;
+    margin: 0.5rem 0;
+    color: $primary-light;
+    text-decoration: none;
+    /* Just to be safe */
+  }
+
+  .service-content p {
+    font-size: 1rem;
+    color: $primary-light;
+    opacity: 0.9;
+    text-decoration: none;
+  }
+
+  &:hover .service-content h3 {
+    color: $accent-blue;
+    text-decoration: underline;
   }
 }
-
-.service-icon {
-  font-size: 3rem;
-  color: $accent-blue;
-  margin-bottom: 1rem;
+/* ================================
+   Hero & Welcome Typography
+   ================================ */
+.page__hero h1,
+.page__hero--overlay h1 {
+  font-size: 2.75rem;
+  font-weight: 700;
 }
 
-.service-content h3 {
-  font-size: 1.4rem;
-  margin: 0.5rem 0;
+.page__hero p {
+  font-size: 1.2rem;
 }
 
-.service-content p {
+h2,
+.archive__subtitle {
+  font-size: 2rem;
+}
+
+.welcome-section h2 {
+  font-size: 1.5rem;
+}
+
+.welcome-section p {
   font-size: 1rem;
-  color: $primary-light;
-  opacity: 0.9;
 }
-
 /* ================================
    Buttons
    ================================ */
@@ -231,4 +262,9 @@ a.btn--inverse::after {
     align-items: center;
     gap: 1rem;
   }
+}
+
+.grey-icon {
+  filter: grayscale(100%);
+  opacity: 0.7;
 }

@@ -52,7 +52,7 @@ This is the clean new start.
   </div>
 {% endfor %}
 </div>
-<p><a href="/case-studies/" class="btn--inverse">Read more case studies →</a></p>
+<p><a href="/case-studies/">Read more case studies →</a></p>
 ---
 ## About Me
 
@@ -66,4 +66,4 @@ This is the clean new start.
     <p><a href="/about/" class="btn--inverse">Learn more about me</a></p>
   </div>
 </div>
-<p>Author test: {{ site.author.name }}</p>
+
