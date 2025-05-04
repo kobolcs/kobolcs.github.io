@@ -1,6 +1,6 @@
 .card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
   margin: 2rem 0;
 }
@@ -13,9 +13,28 @@
   padding: 2rem;
   color: #fff;
   transition: transform 0.2s, box-shadow 0.2s;
+  width: 100%;
 }
 
 .feature__item:hover {
-  transform: translateY(-6px) scale(1.03);
+  transform: translateY(-6px) scale(1.01);
   box-shadow: 0 0 24px #00ffe7cc, 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Button inside cards */
+.feature__item a.btn--inverse {
+  display: inline-block;
+  background: transparent;
+  border: 2px solid #00ffe7;
+  color: #00ffe7;
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  transition: background 0.3s ease;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.feature__item a.btn--inverse:hover {
+  background: #00ffe733;
+  color: #fff;
 }

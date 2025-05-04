@@ -1,5 +1,19 @@
 services:
-  - title: "Sample Service 1"
-    excerpt: "This is a sample service description."
-  - title: "Sample Service 2"
-    excerpt: "Another example service."
+  - title: "E2E Workflow Automation"
+    excerpt: "Custom-built automation for your most complex web journeys. Minimize risk, maximize efficiency."
+  - title: "Regression Testing"
+    excerpt: "Lightning-fast, stable test suites to ensure reliable deployments every time."
+  - title: "AI-Driven Automation"
+    excerpt: "Leverage next-gen, self-healing tests powered by AI (coming soon)."
+  - title: "Web3 & Blockchain Testing"
+    excerpt: "Future-proof testing for decentralized apps and smart contracts."
+
+case_studies:
+  - title: "🏷️ RetuRO – Deposit-Return System Automation"
+    excerpt: "70% reduction in manual QA workload for Romania’s national DRS."
+    url: "/case-studies/#returo--national-deposit-return-system-automation-romania"
+    btn_label: "Read full case study →"
+  - title: "🧬 COPADO – Salesforce Vaccine Management"
+    excerpt: "Increased test reliability for California’s public health platform."
+    url: "/case-studies/#copado--salesforce-based-vaccine-management-cdph"
+    btn_label: "Read full case study →"
