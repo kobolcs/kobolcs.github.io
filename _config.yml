@@ -19,10 +19,11 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+
 author:
   name             : "Csaba Kobol"
   avatar           : "/assets/images/avatar_home_512.png"
-  bio              : "Remote Test Automation Engineer specializing in complex E2E workflows. Passionate about integrating AI and Web3 into quality engineering. GDPR-compliant solutions."
+  bio              : "Remote Test Automation Consultant specializing in complex E2E workflows. I help software teams reduce testing risk and accelerate releases through custom automation solutions. Exploring AI and Web3 testing practices to stay ahead of industry trends."
   location         : "Remote | Europe & North America clients"
   email            :
   links:
@@ -35,3 +36,4 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/kobolcs"
+

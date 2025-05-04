@@ -1,32 +1,32 @@
 services:
-  - title: "E2E Workflow Automation"
-    excerpt: "Custom-built automation for your most complex web journeys."
-    url: "/services/e2e-workflow-automation"
+  - title: "E2E Test Automation"
+    excerpt: "Custom test automation for complex user journeys. Delivered remotely, with seamless team collaboration."
+    url: "/services/e2e-test-automation"
     icon: "fas fa-robot"
 
   - title: "Regression Testing"
-    excerpt: "Lightning-fast, stable test suites to ensure reliable deployments."
+    excerpt: "Fast, reliable automated regression suites for continuous delivery. Supports asynchronous team workflows."
     url: "/services/regression-testing"
-    icon: "fas fa-undo"
+    icon: "fas fa-sync-alt"
 
   - title: "AI-Driven Automation"
-    excerpt: "Leverage next-gen, self-healing tests powered by AI."
+    excerpt: "Explore AI tools and self-healing tests to future-proof QA processes. Prepared for remote delivery."
     url: "/services/ai-driven-automation"
     icon: "fas fa-brain"
 
   - title: "Web3 & Blockchain Testing"
-    excerpt: "Future-proof testing for decentralized apps and smart contracts."
+    excerpt: "Testing solutions for decentralized apps and smart contracts. Flexible collaboration across time zones."
     url: "/services/web3-blockchain-testing"
     icon: "fab fa-ethereum"
 
 
-
 case_studies:
   - title: "🏷️ RetuRO – Deposit-Return System Automation"
-    excerpt: "70% reduction in manual QA workload for Romania’s national DRS."
+    excerpt: "Reduced manual QA workload by 70% for Romania’s national DRS. Delivered automation as a remote consultant."
     url: "/case-studies/#returo--national-deposit-return-system-automation-romania"
     btn_label: "Read full case study →"
+
   - title: "🧬 COPADO – Salesforce Vaccine Management"
-    excerpt: "Increased test reliability for California’s public health platform."
+    excerpt: "Enhanced test reliability for California’s public health platform. Provided automation frameworks remotely."
     url: "/case-studies/#copado--salesforce-based-vaccine-management-cdph"
     btn_label: "Read full case study →"

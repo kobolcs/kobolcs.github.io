@@ -28,6 +28,28 @@ h6 {
 }
 
 /* ================================
+   Splash Title BOOST
+   ================================ */
+h1.page__title {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+/* ================================
+   HERO Section BOOST
+   ================================ */
+
+.page__hero--overlay {
+  min-height: 480px;
+  /* make hero taller */
+}
+
+.page__hero--overlay .btn {
+  font-size: 1.2rem;
+  padding: 0.8rem 1.5rem;
+}
+
+/* ================================
    Case Studies & Feature Cards
    ================================ */
 .card-grid {
@@ -52,19 +74,20 @@ h6 {
   max-width: 600px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin: 0 auto;
-  /* center align */
 }
 
 .feature__item h3,
 .feature__item p,
 .feature__item a {
   color: $primary-light !important;
+  text-decoration: none;
 }
 
 .feature__item--clickable:hover {
   transform: translateY(-4px) scale(1.03);
-  box-shadow: 0 0 24px $accent-blue, 0 8px 20px rgba(0, 0, 0, 0.4);
-  background: linear-gradient(135deg, rgba(13, 27, 42, 0.95), rgba(20, 200, 255, 0.1));
+  /* fix readability by keeping background dark */
+  background-color: $primary-dark;
+  box-shadow: 0 0 24px $accent-blue;
 }
 
 /* ================================
@@ -93,21 +116,32 @@ h6 {
   justify-content: center;
   min-height: 240px;
 
+  h3,
+  p,
+  a {
+    text-decoration: none;
+    color: $primary-light;
+  }
+
   &:hover {
     transform: translateY(-6px) scale(1.03);
-    box-shadow: 0 0 24px $accent-blue, 0 8px 20px rgba(0, 0, 0, 0.4);
-    background: linear-gradient(135deg, rgba(13, 27, 42, 0.95) 0%, rgba(20, 200, 255, 0.15) 100%);
+    box-shadow: 0 0 24px $accent-blue;
+    background-color: $primary-dark;
+    /* no gradient to maintain contrast */
+  }
+
+  &:hover h3 {
+    text-decoration: underline;
+    color: $accent-blue;
   }
 }
 
-/* Service Icons */
 .service-icon {
   font-size: 3rem;
   color: $accent-blue;
   margin-bottom: 1rem;
 }
 
-/* Service Text */
 .service-content h3 {
   font-size: 1.4rem;
   margin: 0.5rem 0;
@@ -117,10 +151,6 @@ h6 {
   font-size: 1rem;
   color: $primary-light;
   opacity: 0.9;
-}
-
-.service-card:hover h3 {
-  color: $accent-blue;
 }
 
 /* ================================
@@ -171,12 +201,7 @@ a.btn--inverse::after {
   box-shadow: 0 0 12px $accent-teal;
   color: $primary-light;
   flex-wrap: wrap;
-  justify-content: center;
-}
-
-.about-snapshot:hover {
-  box-shadow: 0 0 20px $accent-blue;
-  transition: box-shadow 0.3s ease;
+  justify-content: flex-start;
 }
 
 .about-avatar img {
@@ -185,7 +210,6 @@ a.btn--inverse::after {
   border-radius: 50%;
   border: 2px solid $accent-teal;
   vertical-align: middle;
-  margin-bottom: 0.5rem;
 }
 
 .about-content h3 {
@@ -197,7 +221,6 @@ a.btn--inverse::after {
 .about-content p {
   margin: 0.5rem 0;
   color: $primary-light;
-  opacity: 0.9;
   max-width: 600px;
   line-height: 1.5;
 }
@@ -206,6 +229,6 @@ a.btn--inverse::after {
   .about-snapshot {
     flex-direction: column;
     align-items: center;
-    gap: 0.75rem;
+    gap: 1rem;
   }
 }

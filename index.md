@@ -13,8 +13,6 @@ header:
       url: "/contact/"
     - label: "Learn More"
       url: "/about/"
-
-# Optional for SEO and social
 author_profile: true
 ---
 
