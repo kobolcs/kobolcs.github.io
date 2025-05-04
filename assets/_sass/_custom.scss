@@ -1,40 +1,103 @@
+/* 2025 Brand Colors */
+$primary-dark: #0D1B2A;
+$primary-light: #CED4DA;
+$accent-teal: #00C9A7;
+$accent-blue: #14C8FF;
+$background-light: #F8F9FA;
+$text-light: #FFFFFF;
+
+/* Typography & Background */
+body {
+  font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', sans-serif;
+  background-color: $background-light;
+  color: $primary-dark;
+  font-size: 16px;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', sans-serif;
+  color: $primary-dark;
+}
+
+/* Card Grid */
 .card-grid {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   margin: 2rem 0;
-}
-
-.feature__item {
-  background: rgba(30, 30, 30, 0.9);
-  border: 1px solid #00ffe7;
-  border-radius: 1.5rem;
-  box-shadow: 0 0 12px #00ffe755;
-  padding: 2rem;
-  color: #fff;
-  transition: transform 0.2s, box-shadow 0.2s;
+  align-items: stretch;
   width: 100%;
 }
 
-.feature__item:hover {
-  transform: translateY(-6px) scale(1.01);
-  box-shadow: 0 0 24px #00ffe7cc, 0 8px 20px rgba(0, 0, 0, 0.5);
+.card-grid>* {
+  width: 100%;
+  /* Force all direct children (cards) to be full width */
 }
 
-/* Button inside cards */
-.feature__item a.btn--inverse {
+/* Glowing Cards */
+.feature__item {
+  background: $primary-dark;
+  border: 2px solid $accent-teal;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 12px $accent-teal;
+  padding: 2rem;
+  color: $primary-light !important;
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  box-sizing: border-box;
+  align-self: stretch;
+}
+
+/* Ensure all text inside cards is visible and consistent */
+.feature__item h3,
+.feature__item p,
+.feature__item a {
+  color: $primary-light !important;
+}
+
+/* Hover effect for clickable cards */
+.feature__item--clickable:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 0 24px $accent-blue, 0 8px 20px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(135deg, rgba(13, 27, 42, 0.95) 0%, rgba(20, 200, 255, 0.15) 100%);
+}
+
+/* Button Styling */
+a.btn--inverse {
   display: inline-block;
   background: transparent;
-  border: 2px solid #00ffe7;
-  color: #00ffe7;
+  border: 2px solid $accent-teal;
+  color: $accent-teal;
   padding: 0.5rem 1rem;
   border-radius: 0.75rem;
   transition: background 0.3s ease;
   text-decoration: none;
-  margin-top: 1rem;
 }
 
-.feature__item a.btn--inverse:hover {
-  background: #00ffe733;
-  color: #fff;
+a.btn--inverse:hover {
+  background: $accent-teal;
+  color: $primary-dark;
+}
+
+/* Optional: Smooth scaling for all buttons and cards */
+a.btn--inverse,
+.feature__item--clickable {
+  transition: all 0.3s ease;
+}
+
+/* Kill Minimal Mistakes nth-child margins messing up the alignment */
+.feature__item:nth-child(3n+2),
+.feature__item:nth-child(3n+3) {
+  margin-inline-start: 0 !important;
+  clear: none !important;
 }

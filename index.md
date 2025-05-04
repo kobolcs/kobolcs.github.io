@@ -9,6 +9,16 @@ permalink: /
 This is the clean new start.
 
 ---
+## My Services
+
+<div class="card-grid">
+{% for service in site.data.feature_row.services %}
+  <a href="{{ service.url }}" class="feature__item feature__item--clickable">
+      <h3>{{ service.title }}</h3>
+      <p>{{ service.excerpt }}</p>
+  </a>
+{% endfor %}
+</div>
 
 ---
 
@@ -25,20 +35,4 @@ This is the clean new start.
   </div>
 {% endfor %}
 </div>
-
----
-
-## DEBUG OUTPUT
-
-{{ site.data.feature_row.services | inspect }}
-
----
-
-## MANUAL TEST
-
-{% for service in site.data.feature_row.services %}
-### {{ service.title }}
-
-{{ service.excerpt }}
-
-{% endfor %}
+<p><a href="/case-studies/" class="btn--inverse">Read more case studies →</a></p>

@@ -1,12 +1,17 @@
 services:
   - title: "E2E Workflow Automation"
     excerpt: "Custom-built automation for your most complex web journeys. Minimize risk, maximize efficiency."
+    url: "/services/e2e-workflow-automation"
   - title: "Regression Testing"
     excerpt: "Lightning-fast, stable test suites to ensure reliable deployments every time."
+    url: "/services/regression-testing"
   - title: "AI-Driven Automation"
     excerpt: "Leverage next-gen, self-healing tests powered by AI (coming soon)."
+    url: "/services/ai-driven-automation"
   - title: "Web3 & Blockchain Testing"
     excerpt: "Future-proof testing for decentralized apps and smart contracts."
+    url: "/services/web3-blockchain-testing"
+
 
 case_studies:
   - title: "🏷️ RetuRO – Deposit-Return System Automation"
