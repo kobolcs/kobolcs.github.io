@@ -1,4 +1,4 @@
-remote_theme: "mmistakes/minimal-mistakes"
+remote_theme: "mmistakes/minimal-mistakes@4.27.1"
 minimal_mistakes_skin: "default"
 
 title: "Csaba Kobol"
@@ -19,3 +19,19 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+author:
+  name             : "Csaba Kobol"
+  avatar           : "/assets/images/avatar_home_512.png"
+  bio              : "Remote Test Automation Engineer specializing in complex E2E workflows. Passionate about integrating AI and Web3 into quality engineering. GDPR-compliant solutions."
+  location         : "Remote | Europe & North America clients"
+  email            :
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:conta@csabakobol.com"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/csabakobol"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/kobolcs"

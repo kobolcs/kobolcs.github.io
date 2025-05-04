@@ -15,7 +15,7 @@ header:
       url: "/about/"
 
 # Optional for SEO and social
-author_profile: false
+author_profile: true
 ---
 
 
@@ -55,3 +55,17 @@ This is the clean new start.
 {% endfor %}
 </div>
 <p><a href="/case-studies/" class="btn--inverse">Read more case studies →</a></p>
+---
+## About Me
+
+<div class="about-snapshot">
+  <div class="about-avatar">
+    <img src="{{ site.author.avatar }}" alt="{{ site.author.name }}" />
+  </div>
+  <div class="about-content">
+    <h3>{{ site.author.name }}</h3>
+    <p>{{ site.author.bio }}</p>
+    <p><a href="/about/" class="btn--inverse">Learn more about me</a></p>
+  </div>
+</div>
+<p>Author test: {{ site.author.name }}</p>
