@@ -25,13 +25,6 @@ header:
     - label: "Learn More"
       url: "/about/"
 author_profile: true
----
-
-
-
-# 🚀 Welcome
-
-This is the clean new start.
 
 ---
 ## 🚀 My Services

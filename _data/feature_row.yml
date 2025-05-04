@@ -1,34 +1,34 @@
 services:
   - title: "E2E Test Automation"
-    excerpt: "Custom test automation for complex user journeys. Delivered remotely, with seamless team collaboration."
+    excerpt: "Custom E2E test automation solutions designed for your complex user journeys. Ensuring seamless customer experiences and accelerating your path to confident, frequent releases."
     url: "/services/e2e-test-automation"
     icon: "fas fa-robot"
 
   - title: "Regression Testing"
-    excerpt: "Fast, reliable automated regression suites for continuous delivery. Supports asynchronous team workflows."
+    excerpt: "Strategic regression testing services for continuous delivery pipelines. Guaranteeing application stability and minimizing production risks through fast, reliable automated suites."
     url: "/services/regression-testing"
     icon: "fas fa-sync-alt"
 
 
   - title: "AI-Driven Automation"
-    excerpt: "Exploring AI tools and self-healing test automation. Accepting pilot projects for early adopters."
+    excerpt: "Consulting and pilot programs in AI-driven test automation. Leveraging cutting-edge tools to build more resilient and efficient test suites for future-ready applications."
     url: "/services/#ai-driven-automation/"
     icon: "fas fa-brain"
     ribbon: "R&D"
 
   - title: "Blockchain Testing"
-    excerpt: "Currently developing expertise in secure, automated testing for smart contracts and dApps. Looking for beta clients and collaborations."
+    excerpt: "Expertise in secure automated testing for smart contracts and dApps. Partnering with clients to build trust and reliability in their blockchain applications. Seeking beta collaborators."
     url: "/services/#blockchain/"
     icon: "fab fa-ethereum"
     ribbon: "R&D"
 
 case_studies:
   - title: "🏷️ Romania Deposit-Return System Automation"
-    excerpt: "Reduced manual QA workload by 70% for national deposit return system powered by Sensoneo. Delivered automation as a remote consultant."
-    url: "/case-studies/romania-national-deposit-return-system-automation-sensoneo"
+    excerpt: "Automated complex user journeys with a custom regression testing framework, significantly reducing manual QA workload for Sensoneo's national deposit return system." # Refined flow, kept technical context & outcome.
+    url: "/case-studies/#romania-national-deposit-return-system-automation-sensoneo"
     btn_label: "Read full case study →"
 
-  - title: "🧬 CDPH SalesForce Vaccine Management Test Suite Migration to a Low-code  platform"
-    excerpt: "Enhanced test reliability for California’s public health platform. Provided automation frameworks remotely."
+  - title: "🧬 CDPH SalesForce Vaccine Management Test Suite Migration to a Low-code platform"
+    excerpt: "Significantly enhanced the reliability and maintainability of California’s critical public health platform by migrating test suites to Copado's low-code platform." # Fixed typo, slightly refined wording, kept technical context & outcomes.
     url: "/case-studies/#copado--salesforce-based-vaccine-management-cdph"
     btn_label: "Read full case study →"
