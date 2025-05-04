@@ -8,10 +8,12 @@ permalink: /
 
 This is the clean new start.
 
-## My Services
+## MANUAL TEST
 
-{% include_cached feature_row id="services" type="center" %}
+{% for service in site.data.feature_row.services %}
+### {{ service.title }}
 
-## DEBUG OUTPUT
+{{ service.excerpt }}
 
-{{ site.data.feature_row.services | inspect }}
+{% endfor %}
+
