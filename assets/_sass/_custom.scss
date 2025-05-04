@@ -58,6 +58,11 @@ h1.page__title {
   min-height: 500px;
   text-align: center;
   padding: 8rem 1rem;
+  max-width: 100% !important;
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  border-radius: 0;
 }
 
 .page__hero--overlay h1 {
@@ -153,10 +158,14 @@ a.btn--inverse::after {
   justify-content: center;
   box-shadow: 0 0 12px $accent-teal;
   transition: transform 0.3s, box-shadow 0.3s;
+  text-decoration: none;
 }
 
-.service-card * {
-  text-decoration: none !important;
+.service-icon,
+.service-content h3,
+.service-content p {
+  text-decoration: none;
+  color: $primary-light;
 }
 
 .service-card:hover {
@@ -166,20 +175,9 @@ a.btn--inverse::after {
   animation: card-glow 2s infinite ease-in-out;
 }
 
-.service-icon {
-  font-size: 3rem;
+.service-card:hover .service-icon {
   color: $accent-blue;
-  margin-bottom: 1rem;
-}
-
-.service-content h3 {
-  font-size: 1.5rem;
-  color: $primary-light;
-}
-
-.service-content p {
-  font-size: 1rem;
-  opacity: 0.9;
+  text-decoration: none;
 }
 
 .service-card:hover .service-content h3 {
@@ -318,9 +316,9 @@ a.btn--inverse::after {
   }
 }
 
-/* ================================
-   Dark Mode (Prep)
-================================ */
+// /* ================================
+//    Dark Mode (Prep)
+// ================================ */
 // @media (prefers-color-scheme: dark) {
 //   body {
 //     background-color: #0D1B2A;
