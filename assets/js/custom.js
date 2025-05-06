@@ -49,3 +49,12 @@ document.addEventListener("DOMContentLoaded", function() {
         appearOnScroll.observe(fadeEl);
     });
 });
+// Navbar scroll shadow effect
+window.addEventListener('scroll', function() {
+  if (window.scrollY > 10) {
+    document.documentElement.classList.add('scrolled');
+  } else {
+    document.documentElement.classList.remove('scrolled');
+  }
+});
+

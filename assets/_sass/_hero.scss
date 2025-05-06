@@ -1,0 +1,16 @@
+/* Hero section styling */
+.page__hero--overlay {
+  width: 100vw;
+  left: 50%;
+  position: relative;
+  margin-left: -50vw;
+  background: url('/assets/images/hero.png') center/cover no-repeat;
+  background-color: $primary-dark;
+  padding: clamp(4rem, 10vw, 8rem) 1rem;
+  text-align: center;
+  color: $text-light;
+}
+.page__hero--overlay .btn {
+  background: $accent-teal;
+  color: $primary-dark;
+}

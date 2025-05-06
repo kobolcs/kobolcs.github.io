@@ -2,10 +2,10 @@
 layout: single
 title: "About Csaba Kobol"
 permalink: /about/
+classes: page-about
 ---
 {: .page-about }
 
-# About Csaba Kobol
 
 **QA and Test Automation Consultant | 12+ Years Experience**
 

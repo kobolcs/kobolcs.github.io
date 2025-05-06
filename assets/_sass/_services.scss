@@ -1,0 +1,8 @@
+/* Services grid styling */
+.service-grid {
+  display: grid;
+  gap: 2rem;
+}
+.service-card {
+  @extend %card-base;
+}

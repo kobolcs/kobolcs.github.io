@@ -1,0 +1,13 @@
+/* Global typography, masthead, footer */
+body {
+  font-family: 'Inter', sans-serif;
+  background: $background-light;
+  color: $primary-dark;
+  margin: 0;
+}
+.masthead {
+  /* header nav styling */
+}
+.page__footer {
+  text-align: center !important;
+}

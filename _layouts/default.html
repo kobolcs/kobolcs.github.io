@@ -5,7 +5,10 @@
 <body class="{{ page.classes }}">
     {% include masthead.html %}
 
-    <main id="main" role="main">
+    <main id="main" role="main" class="page-content-wrapper">
+        {{ content }}
+    </main>
+
         {{ content }}
     </main>
 
