@@ -1,33 +1,35 @@
 /* ================================
-   2025 Brand Colors & Typography
+   🎨 2025 Brand Colors & Typography
 ================================ */
-$primary-dark: #0D1B2A;
-$primary-light: #CED4DA;
-$accent-teal: #00C9A7;
-$accent-blue: #14C8FF;
-$background-light: #F8F9FA;
-$text-light: #FFFFFF;
+$color-dark: #0D1B2A;
+$color-light: #F8F9FA;
+$color-gray: #CED4DA;
+$color-accent-teal: #00C9A7;
+$color-accent-blue: #14C8FF;
+$color-white: #FFFFFF;
+
+// Semantic roles (easier for future theming)
+$background-primary: $color-light;
+$text-primary: $color-dark;
+$text-inverted: $color-white;
 
 /* ================================
-   Global Typography
+   Typography
 ================================ */
+$font-primary: 'Inter', 'Segoe UI', 'Helvetica Neue', sans-serif;
+
 body {
-  font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', sans-serif;
-  background-color: $background-light;
-  color: $primary-dark;
+  font-family: $font-primary;
+  background-color: $background-primary;
+  color: $text-primary;
   font-size: 16px;
   line-height: 1.6;
   scroll-behavior: smooth;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', sans-serif;
-  color: $primary-dark;
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-primary;
+  color: $text-primary;
 }
 
 /* ================================
@@ -44,69 +46,27 @@ h6 {
 }
 
 /* ================================
-   Splash Title BOOST
-================================ */
-h1.page__title {
-  font-size: 2.4rem;
-  font-weight: 700;
-}
-
-/* ================================
-   HERO Section
+   Hero Section
 ================================ */
 .page__hero--overlay {
   min-height: 500px;
   text-align: center;
-  padding: 8rem 1rem;
-  max-width: 100% !important;
-  width: 100% !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
+  padding-block: 8rem;
+  padding-inline: 1rem;
+  width: 100%;
   border-radius: 0;
 }
 
 .page__hero--overlay h1 {
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 700;
-  color: $text-light;
-  margin-bottom: 1rem;
+  color: $text-inverted;
 }
 
 .page__hero--overlay .page__lead {
-  font-size: 1.5rem;
-  color: $primary-light;
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  color: $color-gray;
   margin-bottom: 2rem;
-}
-
-.page__hero--overlay .btn {
-  font-size: 1.2rem;
-  padding: 0.8rem 1.5rem;
-  margin: 0 0.5rem;
-  background-color: $accent-teal;
-  color: $primary-dark;
-  border-radius: 0.75rem;
-  transition: background 0.3s ease, transform 0.2s ease;
-}
-
-.page__hero--overlay .btn:hover {
-  background: linear-gradient(135deg, $accent-blue, $accent-teal);
-  color: $text-light;
-  transform: scale(1.05);
-  box-shadow: 0 0 16px rgba(20, 200, 255, 0.6);
-  animation: button-glow 1.8s infinite ease-in-out;
-}
-
-/* ================================
-   Section Headings
-================================ */
-h2,
-.archive__subtitle {
-  font-size: 2.4rem;
-  font-weight: 700;
-}
-
-.welcome-section h2 {
-  font-size: 2rem;
 }
 
 /* ================================
@@ -115,16 +75,16 @@ h2,
 a.btn--inverse {
   display: inline-block;
   background: transparent;
-  border: 2px solid $accent-teal;
-  color: $accent-teal;
+  border: 2px solid $color-accent-teal;
+  color: $color-accent-teal;
   padding: 0.5rem 1rem;
   border-radius: 0.75rem;
-  transition: background 0.3s ease, transform 0.2s ease;
+  transition: background 0.3s, transform 0.2s;
 }
 
 a.btn--inverse:hover {
-  background: $accent-teal;
-  color: $primary-dark;
+  background: $color-accent-teal;
+  color: $text-primary;
   transform: scale(1.05);
 }
 
@@ -134,7 +94,7 @@ a.btn--inverse::after {
 }
 
 /* ================================
-   Services Section
+   Cards & Sections
 ================================ */
 .service-grid {
   display: grid;
@@ -143,203 +103,130 @@ a.btn--inverse::after {
   margin: 4rem 0;
 }
 
-.service-card {
-  background: $primary-dark;
-  border: 2px solid $accent-teal;
-  border-radius: 1.5rem;
-  padding: 2.5rem 1.5rem;
-  min-height: 260px;
-  text-align: center;
-  color: $primary-light;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 12px $accent-teal;
-  transition: transform 0.3s, box-shadow 0.3s;
-  text-decoration: none;
-}
-
-.service-icon,
-.service-content h3,
-.service-content p {
-  text-decoration: none;
-  color: $primary-light;
-}
-
-.service-card:hover {
-  transform: translateY(-6px) scale(1.03);
-  box-shadow: 0 0 24px $accent-blue;
-  background-color: $primary-dark;
-  animation: card-glow 2s infinite ease-in-out;
-}
-
-.service-card:hover .service-icon {
-  color: $accent-blue;
-  text-decoration: none;
-}
-
-.service-card:hover .service-content h3 {
-  color: $accent-blue;
-  text-decoration: underline;
-}
-
-/* Ribbon */
-.ribbon {
-  position: absolute;
-  top: 1rem;
-  right: -1rem;
-  background-color: $accent-blue;
-  color: $text-light;
-  font-size: 0.75rem;
-  padding: 0.25rem 0.75rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 0 6px $accent-teal;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-/* ================================
-   Case Studies
-================================ */
-.card-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2.5rem;
-  margin: 3rem 0;
-}
-
+.service-card,
 .feature__item {
-  background: $primary-dark;
-  border: 2px solid $accent-teal;
+  background: $color-dark;
+  border: 2px solid $color-accent-teal;
   border-radius: 1.5rem;
   padding: 2rem;
-  max-width: 600px;
-  flex: 0 1 calc(45% - 1rem);
-  color: $primary-light !important;
-  box-shadow: 0 0 12px $accent-teal;
+  color: $color-gray;
+  box-shadow: 0 0 12px $color-accent-teal;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.feature__item h3,
-.feature__item p,
-.feature__item a {
-  color: $primary-light !important;
-  text-decoration: none;
-}
-
-.feature__item--clickable:hover,
+.service-card:hover,
 .feature__item:hover {
-  transform: translateY(-4px) scale(1.03);
-  box-shadow: 0 0 24px $accent-blue;
-  background-color: $primary-dark;
-  animation: card-glow 2s infinite ease-in-out;
-}
-
-.page__content>p:last-of-type a {
-  display: inline-block;
-  margin-top: 1rem;
-  font-weight: 600;
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 0 24px $color-accent-blue;
 }
 
 /* ================================
-   About Section
+   About Section Cards
 ================================ */
 .about-snapshot {
   display: flex;
-  align-items: center;
-  gap: 2.5rem;
-  padding: 2.5rem;
-  background: $primary-dark;
-  border: 2px solid $accent-teal;
+  gap: 2rem;
+  padding: 2rem;
+  background: $color-dark;
+  border: 2px solid $color-accent-teal;
   border-radius: 1.5rem;
-  box-shadow: 0 0 12px $accent-teal;
-  flex-wrap: wrap;
+  color: $color-gray;
 }
 
 .about-avatar img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 2px solid $accent-teal;
+  border: 2px solid $color-accent-teal;
 }
 
 .about-content h3 {
   font-size: 1.5rem;
-  color: $primary-light;
+  color: $color-gray;
 }
 
-.about-content p {
-  font-size: 1rem;
-  max-width: 600px;
-  color: $primary-light;
+/* ================================
+   Testimonial Block
+================================ */
+.about-testimonial {
+  background-color: $color-light;
+  border-left: 4px solid $color-accent-teal;
+  padding: 1rem 1.5rem;
+  margin: 2rem 0;
+  font-style: italic;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  color: $color-dark;
+}
+
+.about-testimonial strong {
+  color: $color-accent-blue;
+}
+
+/* ================================
+   CTA Button
+================================ */
+.about-cta a.btn--primary {
+  font-size: 1.2rem;
+  padding: 0.8rem 2rem;
+  border-radius: 0.75rem;
+}
+
+.about-cta a.btn--primary:hover {
+  background: linear-gradient(135deg, $color-accent-blue, $color-accent-teal);
+  color: $text-inverted;
+  transform: scale(1.05);
+}
+
+/* ================================
+   Section Backgrounds
+================================ */
+.section-light {
+  background-color: $color-white;
+  color: $text-primary;
+  padding: 4rem 1rem;
+}
+
+.section-dark {
+  background-color: $color-dark;
+  color: $color-gray;
+  padding: 4rem 1rem;
+}
+
+.section-accent {
+  background-color: rgba(20, 200, 255, 0.08);
+  color: $text-primary;
+  padding: 4rem 1rem;
 }
 
 /* ================================
    Footer
 ================================ */
-.page__footer-follow,
-.page__footer-copyright {
+.page__footer {
+  background-color: $color-dark;
+  color: $color-gray;
+  border-top: 2px solid $color-accent-teal;
+  padding: 2rem 1rem;
   text-align: center;
 }
 
 /* ================================
-   Animations
+   Animation (optimized)
 ================================ */
 @keyframes button-glow {
-  0% {
-    box-shadow: 0 0 16px rgba(20, 200, 255, 0.6);
-  }
+  0% { box-shadow: 0 0 16px rgba(20, 200, 255, 0.6); }
+  50% { box-shadow: 0 0 24px rgba(20, 200, 255, 0.8); }
+  100% { box-shadow: 0 0 16px rgba(20, 200, 255, 0.6); }
+}
 
-  50% {
-    box-shadow: 0 0 24px rgba(20, 200, 255, 0.8);
-  }
-
-  100% {
-    box-shadow: 0 0 16px rgba(20, 200, 255, 0.6);
+/* ================================
+   Mobile Responsive Tweaks
+================================ */
+@media (max-width: 600px) {
+  .about-snapshot {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }
 
-@keyframes card-glow {
-  0% {
-    box-shadow: 0 0 12px rgba(20, 200, 255, 0.3);
-  }
-
-  50% {
-    box-shadow: 0 0 24px rgba(20, 200, 255, 0.6);
-  }
-
-  100% {
-    box-shadow: 0 0 12px rgba(20, 200, 255, 0.3);
-  }
-}
-
-// /* ================================
-//    Dark Mode (Prep)
-// ================================ */
-// @media (prefers-color-scheme: dark) {
-//   body {
-//     background-color: #0D1B2A;
-//     color: #CED4DA;
-//   }
-
-//   .service-card,
-//   .feature__item,
-//   .about-snapshot {
-//     background-color: #07111F;
-//     border-color: #14C8FF;
-//   }
-
-//   .ribbon {
-//     background-color: #14C8FF;
-//     color: #0D1B2A;
-//   }
-
-//   a,
-//   .btn,
-//   .btn--inverse {
-//     color: $accent-blue;
-//   }
-// }

@@ -23,8 +23,8 @@ plugins:
 author:
   name: "Csaba Kobol"
   avatar: "/assets/images/avatar_home_512.png"
-  bio: "Remote Test Automation Consultant specializing in complex end-to-end test automation solutions.I help software teams reduce testing risk and accelerate releases through custom automation solutions. Exploring AI and Web3 testing practices to stay ahead of industry trends."
-  location: "Remote | Europe & North America clients"
+  bio: "QA and Test Automation Consultant with over a decade of experience helping SaaS, Web3, and Digital Product teams reduce risk, improve quality, and accelerate releases. Now offering consulting services to support fast-growing teams in Europe and North America."
+  location: "Remote, EU"
   email: ""
   links:
     - label: "Email"
@@ -52,3 +52,10 @@ footer:
       icon: "fab fa-github grey-icon"
       url: "https://github.com/kobolcs"
 
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      custom_js:
+        - /assets/js/custom.js
