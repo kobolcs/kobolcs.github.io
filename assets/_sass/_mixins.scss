@@ -1,5 +1,5 @@
-// Shared card placeholder
-%card-base {
+// Shared card mixin
+@mixin card-base {
   background: $primary-dark;
   border: 2px solid $accent-teal;
   border-radius: 1.25rem;

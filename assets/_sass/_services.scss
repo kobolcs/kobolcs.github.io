@@ -4,5 +4,31 @@
   gap: 2rem;
 }
 .service-card {
-  @extend %card-base;
+  @include card-base;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  color: $accent-teal;
+}
+
+/* Ribbons */
+.ribbon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: $accent-blue;
+  color: $text-light;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  border-radius: 0.25rem;
 }

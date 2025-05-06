@@ -1,3 +1,5 @@
+# _config.yml
+
 remote_theme: "mmistakes/minimal-mistakes@4.27.1"
 minimal_mistakes_skin: "default"
 
@@ -7,12 +9,14 @@ description: "Helping teams deliver better software with expert QA, automation, 
 url: "https://kobolcs.github.io"
 baseurl: ""
 
+# Single sass configuration
 sass:
   sass_dir: assets/_sass
   style: compressed
   load_paths:
     - assets/_sass
 
+# Single plugins list
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -20,38 +24,7 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 
-author:
-  name: "Csaba Kobol"
-  avatar: "/assets/images/avatar_home_512.png"
-  bio: "QA and Test Automation Consultant with over a decade of experience helping SaaS, Web3, and Digital Product teams reduce risk, improve quality, and accelerate releases. Now offering consulting services to support fast-growing teams in Europe and North America."
-  location: "Remote, EU"
-  email: ""
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:conta@csabakobol.com"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/csabakobol"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/kobolcs"
-
-footer:
-  links:
-    - label: "Privacy Policy"
-      icon: "" # no icon
-      url: "/privacy/"
-    - label: "Terms of Service"
-      icon: "" # no icon
-      url: "/terms/"
-    - label: "LinkedIn"
-      icon: "fab fa-linkedin grey-icon"
-      url: "https://linkedin.com/in/csabakobol"
-    - label: "GitHub"
-      icon: "fab fa-github grey-icon"
-      url: "https://github.com/kobolcs"
-
+# Top-level defaults to inject custom.js
 defaults:
   -
     scope:
@@ -59,3 +32,32 @@ defaults:
     values:
       custom_js:
         - /assets/js/custom.js
+
+author:
+  name: "Csaba Kobol"
+  avatar: "/assets/images/avatar_home_512.png"
+  bio: "QA and Test Automation Consultant with over a decade of experience…"
+  location: "Remote, EU"
+  links:
+    - label: "Email"
+      icon: "fas fa-envelope-square"
+      url: "mailto:conta@csabakobol.com"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://linkedin.com/in/csabakobol"
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/kobolcs"
+
+footer:
+  links:
+    - label: "Privacy Policy"
+      url: "/privacy/"
+    - label: "Terms of Service"
+      url: "/terms/"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin grey-icon"
+      url: "https://linkedin.com/in/csabakobol"
+    - label: "GitHub"
+      icon: "fab fa-github grey-icon"
+      url: "https://github.com/kobolcs"
