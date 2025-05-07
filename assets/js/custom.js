@@ -1,3 +1,4 @@
+
 console.log("JS loaded");
 
 // ==========================
@@ -7,11 +8,11 @@ const toggle = document.getElementById('dark-mode-toggle');
 const icon = document.getElementById('dark-mode-icon');
 
 function setDarkModeIcon() {
-    if (!icon) return; // ADD THIS SAFETY CHECK
+    if (!icon) return;
     if (document.body.classList.contains('dark-mode')) {
-        icon.textContent = '🌞'; // Sun for dark mode
+        icon.textContent = '🌞';
     } else {
-        icon.textContent = '🌙'; // Moon for light mode
+        icon.textContent = '🌙';
     }
 }
 
@@ -23,7 +24,6 @@ if (toggle) {
     });
 }
 
-// Apply saved preference
 if (localStorage.getItem('theme') === 'dark') {
     document.body.classList.add('dark-mode');
 } else {
@@ -32,29 +32,14 @@ if (localStorage.getItem('theme') === 'dark') {
 setDarkModeIcon();
 
 // ==========================
-// 🔥 Scroll Fade-in Animation
+// 🔥 Scroll Fade-in Animation (2025 Intersection Observer)
 // ==========================
-document.addEventListener("DOMContentLoaded", function() {
-    const faders = document.querySelectorAll('.fade-in');
-
-    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
-        entries.forEach(entry => {
-            if (!entry.isIntersecting) return;
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
             entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
-        });
-    }, { threshold: 0.1 });
-
-    faders.forEach(fadeEl => {
-        appearOnScroll.observe(fadeEl);
+        }
     });
 });
-// Navbar scroll shadow effect
-window.addEventListener('scroll', function() {
-  if (window.scrollY > 10) {
-    document.documentElement.classList.add('scrolled');
-  } else {
-    document.documentElement.classList.remove('scrolled');
-  }
-});
 
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));

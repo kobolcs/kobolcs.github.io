@@ -1,0 +1,71 @@
+
+.card {
+  @include card-base;
+}
+
+.btn {
+  background: $accent-teal;
+  color: $text-light;
+  padding: $spacing-sm $spacing-md;
+  border-radius: 0.5rem;
+  transition: background 0.3s;
+  &:hover {
+    background: $accent-blue;
+  }
+}
+
+/* Hero Section */
+.hero {
+  padding: $spacing-lg 0;
+  text-align: center;
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: $spacing-sm;
+  }
+
+  p {
+    font-size: 1.25rem;
+    color: $primary-light;
+    margin-bottom: $spacing-md;
+  }
+
+  .btn-primary {
+    @extend .btn;
+    background: $accent-blue;
+    &:hover {
+      background: darken($accent-blue, 10%);
+    }
+  }
+}
+
+@media (max-width: $bp-sm) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+/* Animation helpers */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Button hover gentle scaling */
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Card hover gentle shadow */
+.card:hover {
+  box-shadow: 0 4px 16px rgba($accent-teal, 0.4);
+}

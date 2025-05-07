@@ -1,6 +1,19 @@
+// Colors
 $primary-dark: #0D1B2A;
 $primary-light: #CED4DA;
 $accent-teal: #00C9A7;
 $accent-blue: #14C8FF;
 $background-light: #F8F9FA;
 $text-light: #FFFFFF;
+
+// Spacing scale
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 2rem;
+$spacing-lg: 4rem;
+
+// Breakpoints
+$bp-sm: 576px;
+$bp-md: 768px;
+$bp-lg: 992px;
+$bp-xl: 1200px;

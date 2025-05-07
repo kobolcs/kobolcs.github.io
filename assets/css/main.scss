@@ -1,12 +1,10 @@
 ---
 ---
 
-@import "minimal-mistakes"; // bring in the theme’s SCSS
-@import "../_sass/variables"; // your color & type tokens
-@import "../_sass/mixins"; // your mixins (e.g. card-base)
-@import "../_sass/global"; // global resets, masthead & footer
-@import "../_sass/hero"; // splash/hero overrides
-@import "../_sass/services"; // service‐cards grid & styling
-@import "../_sass/about"; // about‐page & snapshot styling
-@import "../_sass/contact"; // contact‐page form tweaks
-@import "../_sass/blog"; // blog index & post tweaks
+@import "minimal-mistakes";
+@import "../_sass/variables";
+@import "../_sass/mixins";
+@import "../_sass/base";
+@import "../_sass/layout";
+@import "../_sass/components";
+@import "../_sass/pages";

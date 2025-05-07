@@ -1,88 +1,40 @@
 ---
-layout: splash
-
-title: "Eliminate Testing Bottlenecks. Accelerate Releases."
-permalink: /
-excerpt: "Bringing over a decade of test automation experience with SaaS, Web3, and Digital Product teams across Europe and North America — helping them reduce risk and accelerate releases."
-
-header:
-  overlay_color: "#0D1B2A"
-  overlay_filter: "0.4"
-  overlay_image: /assets/images/hero.png
-  actions:
-    - label: "Book a Discovery Call"
-      url: "https://calendly.com/YOURLINK"
-    - label: "Read About My Experience"
-      url: "/about/#experience"
-author_profile: true
-
-custom_js:
-  - /assets/js/custom.js
-
+layout: default
+title: Home
+description: Expert QA and Test Automation Consulting for SaaS and Tech Teams
 ---
 
+{% include hero.html %}
 
-## 🚀 My Services
-
-<div class="section-dark fade-in" aria-label="Services Section">
-  <div class="service-grid">
-  {% for service in site.data.feature_row.services %}
-    <a href="{{ service.url }}" class="service-card feature__item--clickable" aria-label="Service: {{ service.title }}">
-      <i class="service-icon {{ service.icon }}" aria-hidden="true"></i>
-      {% if service.ribbon %}
-      <span class="ribbon">{{ service.ribbon }}</span>
-      {% endif %}
-
-      <div class="service-content">
-        <h3>{{ service.title }}</h3>
-        <p>{{ service.excerpt }}</p>
-      </div>
-    </a>
-  {% endfor %}
-  </div>
-</div>
-
----
-
-## Featured Case Studies
-
-<div class="section-light fade-in" aria-label="Case Studies Section">
-  <div class="card-grid">
-  {% for case in site.data.feature_row.case_studies %}
-    <div class="feature__item" aria-label="Case Study: {{ case.title }}">
-      <h3>{{ case.title }}</h3>
-      <p>{{ case.excerpt }}</p>
-      {% if case.url %}
-        <p><a href="{{ case.url }}" class="btn--inverse" aria-label="Read case study: {{ case.title }}">{{ case.btn_label }}</a></p>
-      {% endif %}
+<section class="container fade-in">
+  <h2>What I Offer</h2>
+  <div class="grid-2 mt-3">
+    <div class="card">
+      <h3>Test Automation Frameworks</h3>
+      <p>Designing scalable, maintainable frameworks tailored to your products and workflows.</p>
     </div>
-  {% endfor %}
-  </div>
-  <p><a href="/case-studies/" aria-label="View all case studies">Read more case studies →</a></p>
-</div>
-
----
-
-## About Me
-
-<div class="section-accent fade-in" aria-label="About Me Section">
-  <div class="about-snapshot">
-    <div class="about-avatar">
-      <img src="{{ site.author.avatar }}" alt="Photo of {{ site.author.name }}" />
+    <div class="card">
+      <h3>Team Maturity & Mentoring</h3>
+      <p>Helping QA teams advance in automation skills and processes through hands-on mentoring.</p>
     </div>
-    <div class="about-content">
-      <h3>{{ site.author.name }}</h3>
-      <p>
-      I’m a QA and Test Automation Consultant drawing on over a decade of experience as a test engineer for SaaS, Web3, and Digital Product teams across Europe and North America.
-    </p>
-    <p>
-      I specialize in designing scalable, maintainable test automation frameworks tailored to fast-paced development environments. My focus is reducing risk, improving quality, and aligning testing efforts with business goals.
-    </p>
-    <p>
-      I’m now offering direct consulting services to help engineering leaders overcome testing bottlenecks, enhance their test automation maturity, and accelerate software delivery.
-    </p>
-      <p><a href="/about/#my-philosophy" class="btn--inverse" aria-label="Discover my testing philosophy
-">Discover my testing philosophy</a></p>
+    <div class="card">
+      <h3>CI/CD & Process Integration</h3>
+      <p>Seamlessly integrating testing into agile workflows and CI/CD pipelines.</p>
+    </div>
+    <div class="card">
+      <h3>Advisory & Strategy</h3>
+      <p>Consulting with QA leads, CTOs, and product managers on quality strategy and automation best practices.</p>
     </div>
   </div>
-</div>
+</section>
+
+<section class="container fade-in mt-3">
+  <h2>About Me</h2>
+  <p>I'm Csaba Kobol, an independent QA and test automation consultant with over two decades of experience helping tech teams deliver software confidently and efficiently.</p>
+  <p><a href="/about" class="btn">Learn More About My Approach</a></p>
+</section>
+
+<section class="container fade-in mt-3">
+  <h2>Ready to build better testing solutions?</h2>
+  <p><a href="/contact" class="btn btn-primary">Schedule a Consultation</a></p>
+</section>

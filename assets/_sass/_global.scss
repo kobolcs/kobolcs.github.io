@@ -5,9 +5,28 @@ body {
   color: $primary-dark;
   margin: 0;
 }
-.masthead {
-  /* header nav styling */
+
+/* Simple responsive container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.page__footer {
-  text-align: center !important;
+
+/* Spacing utilities */
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 2rem; }
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 2rem; }
+
+/* Simple grid utility */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
 }
+
+.masthead { /* header nav styling */ }
+.page__footer { text-align: center !important; }
