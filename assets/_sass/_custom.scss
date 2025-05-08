@@ -7,6 +7,8 @@ $accent-teal: #00C9A7;
 $accent-blue: #14C8FF;
 $background-light: #F8F9FA;
 $text-light: #FFFFFF;
+$services-light-bg: #F9FAFB;
+$text-gray-dark: #343A40;
 
 /* ================================
    Global Typography
@@ -318,4 +320,133 @@ a.btn--inverse::after {
   100% {
     box-shadow: 0 0 12px rgba(20, 200, 255, 0.3);
   }
+}
+ /* ================================
+   Services Page
+================================ */
+
+.page__hero--overlay .page__title {
+  color: $primary-dark;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  font-weight: 900;
+  text-align: center;
+  max-width: 967px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page__hero--overlay .page__title .second-line {
+  color: $accent-teal;
+  font-size: 2.8rem;
+  font-weight: 700;
+  /* Slightly lighter for a subtitle */
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+  line-height: 1.5rem;
+}
+
+.page__hero--overlay .page__title .third-line {
+  color: $text-gray-dark;
+  font-size: 1.4rem;
+  font-weight: 400;
+  opacity: 0.85;
+  line-height: 0.6rem;
+  text-align: center;
+  margin-top: 1.25rem;
+  /* More breathing room */
+  margin-left: 3rem;
+}
+
+
+/* Core Service Packages */
+.page--services .service-packages {
+  background-color: $services-light-bg;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.page--services .service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.page--services .service-card {
+  background-color: $primary-dark;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  flex: 1 1 300px;
+  max-width: 350px;
+  color: $text-light;
+  border: 1px solid rgba($accent-blue, 0.15);
+  box-shadow: 0 0 4px rgba($accent-blue, 0.15);
+}
+
+.page--services .service-card h3 {
+  margin-top: 0;
+  font-size: 1.3rem;
+}
+
+.page--services .service-card ul,
+.page--services .service-card li {
+  text-align: left;
+  font-size: 1rem;
+  /* Ensure base font size applies */
+  line-height: 1.5;
+}
+
+/* Long-Term Support */
+.page--services .long-term {
+  background-color: $services-light-bg;
+  padding: 3rem 2rem;
+  color: $primary-dark;
+}
+
+/* AI & Blockchain Section */
+.page--services .ai-blockchain {
+  background-color: $primary-dark;
+  color: $text-light;
+  padding: 3rem 2rem;
+  border-top: 2px solid rgba($accent-blue, 0.2);
+  border-bottom: 2px solid rgba($accent-blue, 0.2);
+}
+
+.page--services .pilot-card {
+  border: 1px solid rgba($accent-blue, 0.2);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.page--services blockquote.pilot-note {
+  border-left: 4px solid rgba($accent-blue, 0.2);
+  padding-left: 1rem;
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+/* CTA Button */
+.page--services .cta-button {
+  background-color: $accent-teal;
+  color: $text-light;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.page--services .cta-button:hover {
+  background: linear-gradient(135deg, $accent-blue, $accent-teal);
+  color: $text-light;
+}
+
+/* Why Work With Me */
+.page--services .why-me {
+  background-color: $services-light-bg;
+  padding: 3rem 2rem;
+  color: $primary-dark;
 }

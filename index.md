@@ -22,8 +22,6 @@ header:
   actions:
     - label: "Book a Discovery Call"
       url: "/contact/"
-    - label: "Learn More"
-      url: "/about/"
 author_profile: true
 
 ---
