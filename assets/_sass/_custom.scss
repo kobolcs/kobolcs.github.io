@@ -360,42 +360,83 @@ a.btn--inverse::after {
 
 
 /* Core Service Packages */
-.page--services .service-packages {
-  background-color: $services-light-bg;
-  padding: 3rem 2rem;
-  text-align: center;
-}
-
 .page--services .service-cards {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   justify-content: center;
   margin-top: 2rem;
+  padding: 0 1rem;
+}
+
+.page--services .service-card:hover{
+  transform: none;
+  animation: none;
+  box-shadow: 0 0 24px $accent-blue;
+  background-color: $primary-dark;
 }
 
 .page--services .service-card {
   background-color: $primary-dark;
   border-radius: 0.75rem;
-  padding: 2rem;
-  flex: 1 1 300px;
-  max-width: 350px;
+  padding: 1.2rem 1rem;
   color: $text-light;
   border: 1px solid rgba($accent-blue, 0.15);
   box-shadow: 0 0 4px rgba($accent-blue, 0.15);
+
+  // Optional: cap how big a card gets on very wide screens
+  max-width: 320px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.page--services .service-card h3 {
-  margin-top: 0;
-  font-size: 1.3rem;
+
+
+.page-services .service-card h3 {
+  min-height: 4rem;
+  font-size: 2rem;
+  color: $primary-light;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  padding: auto;
 }
 
-.page--services .service-card ul,
-.page--services .service-card li {
+.page-services .service-card h3::before {
+  content: "🔹";
+  margin-right: 0.5rem;
+  color: $accent-teal;
+  font-size: 2rem;
+}
+
+.page-services .service-card .scope-timeline {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.page-services .service-card strong {
+  color: $accent-teal;
+  display: inline-block;
+  margin-bottom: 0.25rem;
+}
+
+.page-services .service-card ul,
+.page-services .service-card li {
   text-align: left;
   font-size: 1rem;
-  /* Ensure base font size applies */
   line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+.page-services .service-card em {
+  color: lighten($text-light, 10%);
+  font-style: italic;
+  display: block;
+  margin-top: 0.75rem;
+  text-align: left;
 }
 
 /* Long-Term Support */

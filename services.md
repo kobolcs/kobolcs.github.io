@@ -1,14 +1,10 @@
 ---
 title: "QA and Test Automation Consulting<br><span class='second-line' style='margin-left: 2rem;'>Flexible Engagement Models</span><br><span class='third-line' style='margin-left: 1rem;'>I provide consulting services designed to help SaaS startups, scaleups, and tech-driven teams build reliable, scalable software through quality assurance and test automation.</span>"
-
-
-
 layout: splash
 permalink: /services/
 header:
   overlay_color: "#f9fafb"  # Light gray background
   overlay_filter: "0"       # No dark overlay
-
   actions: []
 classes: wide page-services
 ---
@@ -17,9 +13,11 @@ classes: wide page-services
   <div class="service-cards">
 
     <div class="service-card">
-      <h3>🔹 Framework Accelerator Package</h3>
-      <strong>Scope:</strong> Design and implement an automated testing framework.<br>
-      <strong>Timeline:</strong> 4–6 weeks.
+      <h3>Framework Accelerator Package</h3>
+      <div class="scope-timeline">
+        <strong>Scope:</strong> Design and implement an automated testing framework.<br>
+        <strong>Timeline:</strong> 4–6 weeks.
+      </div>
       <ul>
         <li>Tool selection and architecture design</li>
         <li>Framework development and initial scripts</li>
@@ -30,9 +28,11 @@ classes: wide page-services
     </div>
 
     <div class="service-card">
-      <h3>🔹 Mentoring Package</h3>
+      <h3>Mentoring Package</h3>
+      <div class="scope-timeline">
       <strong>Scope:</strong> Upskill and guide teams.<br>
       <strong>Timeline:</strong> Flexible.
+      </div>
       <ul>
         <li>Tailored training sessions</li>
         <li>Code review and feedback</li>
@@ -42,9 +42,11 @@ classes: wide page-services
     </div>
 
     <div class="service-card">
-      <h3>🔹 Audit Package</h3>
+      <h3>Audit Package</h3>
+      <div class="scope-timeline">
       <strong>Scope:</strong> Evaluate existing QA processes.<br>
       <strong>Timeline:</strong> 2–3 weeks.
+      </div>
       <ul>
         <li>Documentation review</li>
         <li>Process and strategy assessment</li>
