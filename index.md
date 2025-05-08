@@ -60,7 +60,7 @@ author_profile: true
   </div>
 {% endfor %}
 </div>
-<p><a href="/case-studies/">Read more case studies →</a></p>
+<p><a href="/case-studies/">Read more case studies</a></p>
 ---
 ## About Me
 

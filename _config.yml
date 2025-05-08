@@ -20,10 +20,19 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 
+# Top-level defaults to inject custom.js
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      custom_js:
+        - /assets/js/custom.js
+
 author:
   name: "Csaba Kobol"
   avatar: "/assets/images/avatar_home_512.png"
-  bio: "Remote Test Automation Consultant specializing in complex end-to-end test automation solutions.I help software teams reduce testing risk and accelerate releases through custom automation solutions. Exploring AI and Web3 testing practices to stay ahead of industry trends."
+  bio: "Remote Test Automation Consultant specializing in complex end-to-end test automation solutions.I help software teams reduce testing risk and accelerate releases through custom automation solutions. Exploring AI in testing practices to stay ahead of industry trends."
   location: "Remote | Europe & North America clients"
   email: ""
   links:
@@ -51,4 +60,5 @@ footer:
     - label: "GitHub"
       icon: "fab fa-github grey-icon"
       url: "https://github.com/kobolcs"
+
 

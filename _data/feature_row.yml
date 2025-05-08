@@ -16,19 +16,13 @@ services:
     icon: "fas fa-brain"
     ribbon: "R&D"
 
-  - title: "Blockchain Testing"
-    excerpt: "Expertise in secure automated testing for smart contracts and dApps. Partnering with clients to build trust and reliability in their blockchain applications. Seeking beta collaborators."
-    url: "/services/#blockchain/"
-    icon: "fab fa-ethereum"
-    ribbon: "R&D"
-
 case_studies:
   - title: "🏷️ Romania Deposit-Return System Automation"
     excerpt: "Automated complex user journeys with a custom regression testing framework, significantly reducing manual QA workload for Sensoneo's national deposit return system." # Refined flow, kept technical context & outcome.
     url: "/case-studies/#romania-national-deposit-return-system-automation-sensoneo"
-    btn_label: "Read full case study →"
+    btn_label: "Read full case study"
 
   - title: "🧬 CDPH SalesForce Vaccine Management Test Suite Migration to a Low-code platform"
-    excerpt: "Significantly enhanced the reliability and maintainability of California’s critical public health platform by migrating test suites to Copado's low-code platform." # Fixed typo, slightly refined wording, kept technical context & outcomes.
+    excerpt: "Significantly enhanced the reliability and maintainability of California’s critical public health platform by migrating test suites to Copado's low-code platform."
     url: "/case-studies/#copado--salesforce-based-vaccine-management-cdph"
-    btn_label: "Read full case study →"
+    btn_label: "Read full case study"
