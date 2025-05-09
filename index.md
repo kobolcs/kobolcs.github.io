@@ -14,16 +14,6 @@ header:
     - label: "Learn More"
       url: "/about/"
 author_profile: true
-
-header:
-  overlay_color: "#0D1B2A"  # Deep blue background
-  overlay_filter: "0.4"
-  overlay_image: /assets/images/hero.png  # Optional, add later or use a tech-inspired abstract
-  actions:
-    - label: "Book a Discovery Call"
-      url: "/contact/"
-author_profile: true
-
 ---
 ## 🚀 My Services
 

@@ -68,7 +68,7 @@ classes: wide page-services
   <p><em>Projects beyond the initial scope transition to a retainer with a minimum commitment of 3 months.</em></p>
 </div>
 
-<div class="ai-blockchain">
+<div class="ai">
   <h2>New: AI-Driven Testing & Blockchain Testing Pilots</h2>
   <h3>Available for Early Adopter Clients</h3>
 
@@ -76,16 +76,11 @@ classes: wide page-services
     <h4>🧠 AI-Driven Testing</h4>
     <ul>
       <li>Exploration of AI-powered test generation</li>
+      <li>Exloration of self-healing tests</li>
       <li>Predictive analysis on quality metrics</li>
     </ul>
   </div>
 
-  <div class="pilot-card">
-    <h4>🔗 Blockchain Testing</h4>
-    <ul>
-      <li>Exploratory smart contract testing</li>
-      <li>Transaction flow validation</li>
-    </ul>
   </div>
 
   <p><strong>Early Adopter Discount:</strong> Available for 1–2 initial clients.</p>
